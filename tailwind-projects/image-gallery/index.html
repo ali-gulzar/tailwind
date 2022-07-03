@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Image Gallery</title>
+  </head>
+  <body>
+    <!-- Container -->
+    <div
+      class="bg-cyan-50 min-h-screen flex items-center justify-center"
+    >
+      <!-- Card -->
+      <div
+        class="mx-6 my-2 rounded-2xl shadow-2xl bg-white p-6 md:p-20"
+      >
+        <!-- Navigation -->
+        <div
+          class="flex flex-col items-center md:flex-row md:justify-end space-y-3 md:space-y-0 md:space-x-4"
+        >
+          <!-- Nav Item 1 -->
+          <div class="group">
+            <a href="#">Vector</a>
+            <div
+              class="border-b-2 mt-2 border-black opacity-0 duration-500 group-hover:opacity-100"
+            ></div>
+          </div>
+
+          <!-- Nav Item 2 -->
+          <div class="group">
+            <a href="#">Illustrations</a>
+            <div
+              class="border-b-2 mt-2 border-black opacity-0 duration-500 group-hover:opacity-100"
+            ></div>
+          </div>
+
+          <!-- Nav Item 3 -->
+          <div class="group">
+            <a href="#">Images</a>
+            <div
+              class="border-b-2 mt-2 border-black opacity-0 duration-500 group-hover:opacity-100"
+            ></div>
+          </div>
+
+          <!-- Nav Item 4 -->
+          <div class="group">
+            <a href="#">Icon</a>
+            <div
+              class="border-b-2 mt-2 border-black opacity-0 duration-500 group-hover:opacity-100"
+            ></div>
+          </div>
+        </div>
+
+        <!-- Search Upload Container -->
+        <div
+          class="flex flex-col md:flex-row md:justify-between space-y-4 md:space-y-0 md:space-x-2 md:mt-4"
+        >
+          <!-- Search bar -->
+          <div
+            class="flex justify-between border-b border-black"
+          >
+            <input
+              type="text"
+              class="text-sm focus:outline-none placeholder:font-thin font-thin"
+              placeholder="Search"
+            />
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-8 text-gray-300 duration-200 hover:scale-110"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  stroke="none"
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <circle cx="10" cy="10" r="7" />
+                <line x1="21" y1="21" x2="15" y2="15" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Upload button -->
+          <button
+            class="text-white text-center px-16 py-2 text-md border rounded-xl shadow-2xl border-black bg-black"
+          >
+            Upload
+          </button>
+        </div>
+
+        <!-- Gallery -->
+        <div class="grid md:grid-cols-3 gap-4 mt-4">
+          <!-- Image 1 -->
+          <div class="group relative">
+            <img
+              src="./images/image1.jpg"
+              alt="image1"
+              class="w-60"
+            />
+            <div
+              class="absolute bottom-0 left-0 right-0 p-2 opacity-0 duration-200 group-hover:opacity-100 bg-opacity-40 bg-black"
+            >
+              <div class="flex justify-between">
+                <div class="flex flex-col">
+                  <p class="text-sm text-white">
+                    Abstract Art
+                  </p>
+                  <p class="text-xs text-white">
+                    245 likes - 35 Shares
+                  </p>
+                </div>
+                <img
+                  src="./images/bookmark.svg"
+                  alt="bookmark"
+                  class="w-6"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Image 2 -->
+          <div class="group relative">
+            <img
+              src="./images/image2.jpg"
+              alt="image1"
+              class="w-60"
+            />
+            <div
+              class="absolute bottom-0 left-0 right-0 p-2 opacity-0 duration-200 group-hover:opacity-100 bg-opacity-40 bg-black"
+            >
+              <div class="flex justify-between">
+                <div class="flex flex-col">
+                  <p class="text-sm text-white">
+                    Abstract Art
+                  </p>
+                  <p class="text-xs text-white">
+                    245 likes - 35 Shares
+                  </p>
+                </div>
+                <img
+                  src="./images/bookmark.svg"
+                  alt="bookmark"
+                  class="w-6"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Image 3 -->
+          <div class="group relative">
+            <img
+              src="./images/image3.jpg"
+              alt="image1"
+              class="w-60"
+            />
+            <div
+              class="absolute bottom-0 left-0 right-0 p-2 opacity-0 duration-200 group-hover:opacity-100 bg-opacity-40 bg-black"
+            >
+              <div class="flex justify-between">
+                <div class="flex flex-col">
+                  <p class="text-sm text-white">
+                    Abstract Art
+                  </p>
+                  <p class="text-xs text-white">
+                    245 likes - 35 Shares
+                  </p>
+                </div>
+                <img
+                  src="./images/bookmark.svg"
+                  alt="bookmark"
+                  class="w-6"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Image 4 -->
+          <div class="group relative">
+            <img
+              src="./images/image4.jpg"
+              alt="image1"
+              class="w-60"
+            />
+            <div
+              class="absolute bottom-0 left-0 right-0 p-2 opacity-0 duration-200 group-hover:opacity-100 bg-opacity-40 bg-black"
+            >
+              <div class="flex justify-between">
+                <div class="flex flex-col">
+                  <p class="text-sm text-white">
+                    Abstract Art
+                  </p>
+                  <p class="text-xs text-white">
+                    245 likes - 35 Shares
+                  </p>
+                </div>
+                <img
+                  src="./images/bookmark.svg"
+                  alt="bookmark"
+                  class="w-6"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- Image 5 -->
+          <div class="group relative">
+            <img
+              src="./images/image5.jpg"
+              alt="image1"
+              class="w-60"
+            />
+            <div
+              class="absolute bottom-0 left-0 right-0 p-2 opacity-0 duration-200 group-hover:opacity-100 bg-opacity-40 bg-black"
+            >
+              <div class="flex justify-between">
+                <div class="flex flex-col">
+                  <p class="text-sm text-white">
+                    Abstract Art
+                  </p>
+                  <p class="text-xs text-white">
+                    245 likes - 35 Shares
+                  </p>
+                </div>
+                <img
+                  src="./images/bookmark.svg"
+                  alt="bookmark"
+                  class="w-6"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Image 6 -->
+          <div class="group relative">
+            <img
+              src="./images/image6.jpg"
+              alt="image1"
+              class="w-60"
+            />
+            <div
+              class="absolute bottom-0 left-0 right-0 p-2 opacity-0 duration-200 group-hover:opacity-100 bg-opacity-40 bg-black"
+            >
+              <div class="flex justify-between">
+                <div class="flex flex-col">
+                  <p class="text-sm text-white">
+                    Abstract Art
+                  </p>
+                  <p class="text-xs text-white">
+                    245 likes - 35 Shares
+                  </p>
+                </div>
+                <img
+                  src="./images/bookmark.svg"
+                  alt="bookmark"
+                  class="w-6"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
